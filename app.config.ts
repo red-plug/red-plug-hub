@@ -3,7 +3,7 @@ export default defineAppConfig({
   docus: {
     title: 'Red Hub',
     description: 'El conocimiento colectivo de Red Plug',
-    image: 'https://redplug.com.mx/images/blog/red-plug-website/1.webp',
+    image: '/image.png',
     socials: {
       github: 'red-plug/red-plug-hub',
       nuxt: {
