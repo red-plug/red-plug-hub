@@ -3,10 +3,17 @@ export default defineNuxtConfig({
   extends: ['@nuxt-themes/docus'],
   devtools: { enabled: true },
 
-  modules: [// Remove it if you don't use Plausible analytics
-  // https://github.com/nuxt-modules/plausible
-  '@nuxtjs/plausible', '@nuxt/fonts'],
+  modules: [
+    '@nuxt/fonts'
+  ],
   compatibilityDate: '2024-10-24',
+  app: {
+    head: {
+      meta: [
+        { name: 'robots', content: 'noindex' }
+      ]
+    }
+  },
   css: [
     '~/assets/css/red-plug.css'
   ],
@@ -14,12 +21,14 @@ export default defineNuxtConfig({
     highlight: {
         langs: [
             'js',
+            'typescript',
             'html',
             'php',
             'sql',
             'vue-html',
             'vue',
-            'bash'
+            'bash',
+            'blade'
         ]
     }
   },
