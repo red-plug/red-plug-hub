@@ -19,17 +19,17 @@ export default defineNuxtConfig({
   ],
   content: {
     highlight: {
-        langs: [
-            'js',
-            'typescript',
-            'html',
-            'php',
-            'sql',
-            'vue-html',
-            'vue',
-            'bash',
-            'blade'
-        ]
+      langs: [
+        'js',
+        'typescript',
+        'html',
+        'php',
+        'sql',
+        'vue-html',
+        'vue',
+        'bash',
+        'blade'
+      ]
     }
   },
 })
